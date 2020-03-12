@@ -1,11 +1,11 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "27.0.3"
+    compileSdkVersion 27
+    buildToolsVersion "28.0.3"
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 26
+        targetSdkVersion 27
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
@@ -19,9 +19,9 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':GameSDK_Channel_Lexiang')
-    compile project(':GameSDK_Module_Init')
-    compile project(':GameSDK_Module_Account')
-    compile project(':GameSDK_Module_Purchase')
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api project(':GameSDK_Channel_Lexiang')
+    api project(':GameSDK_Module_Init')
+    api project(':GameSDK_Module_Account')
+    api project(':GameSDK_Module_Purchase')
 }
